@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-bg-color) #ffffff;
+  background-color: var(--primary-bg-color);
   color: var(--text-color) #757575;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03;
@@ -105,8 +105,8 @@ img {
   line-height: 1.14em;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header .contacts .link {
@@ -115,8 +115,8 @@ img {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -161,11 +161,7 @@ img {
 
 .hero {
   max-width: 1600px;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url('../images/hero-banner-1.jpg');
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/hero-banner-1.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -271,15 +267,22 @@ img {
 }
 
 .features-icon {
-  display: block;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
   background-color: var(--secondary-bg-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 102.34px;
-  padding-left: 102.34px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
   border-radius: 4px;
+  color: var(--accent-color);
 }
+
+.big-icon:hover, .big-icon:focus {
+  fill: currentColor;
+}
+
+
 
 /* section Team */
 
